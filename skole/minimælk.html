@@ -5,16 +5,10 @@
   </head>
   <body>
     <img src="https://www.frugtmanden.com/media/catalog/product/cache/ce641b62fe2b50b8865ff72d5b491831/m/i/minim_lk_arla_1.webp" style="width:700px;height:700px;"
-      <section class="container">
-  <div class="product-quantity">
-    <h3>Quantity</h3>
-    <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true"><div class="quantity-selectors-container">
-      <div class="quantity-selectors">
-        <button type="button" class="increment-quantity" aria-label="Add one" data-direction="1"><span>&#43;</span></button>
-        <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="qty-input">
+	<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+	<input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+	<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+</div>
   </body>
 </html>
